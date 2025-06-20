@@ -1,46 +1,47 @@
-Movie Dataset Cleaning Project
-This project focuses on cleaning a raw movie dataset using Python and Pandas in a Jupyter Notebook environment.
+# 🎥 Movie Data Cleaning Project
 
+This project demonstrates how to clean a raw movie dataset using **Python**, **Pandas**, and **Jupyter Notebook**.
 
+---
 
-Description
-The original dataset (movies.csv) contained inconsistencies and formatting issues, such as:
+## 📁 Files Included
 
-Text fields with newline characters and unnecessary whitespace
+| File Name             | Description                                      |
+|-----------------------|--------------------------------------------------|
+| `Pandas2F.ipynb`      | Notebook with step-by-step data cleaning         |
+| `movies_cleaned.csv`  | Final cleaned dataset ready for analysis         |
 
-Year values wrapped in parentheses (e.g., (2021))
+---
 
-VOTES stored as strings with commas (e.g., "885,805")
+## 🧹 Cleaning Summary
 
-Missing values in important columns like RATING and RunTime
+The original dataset (`movies.csv`) contained:
+- Newlines and unnecessary spaces in text
+- Year values with parentheses like `(2021)`
+- `VOTES` column stored as strings with commas
+- Missing values in `RATING` and `RunTime`
+- A nearly empty `Gross` column
 
-A mostly empty Gross column
+### ✔️ Cleaning Steps Performed:
+- Stripped extra whitespace and newlines
+- Extracted 4-digit years using regular expressions
+- Converted `VOTES` from strings to numeric values
+- Dropped `Gross` due to missing data
+- Removed rows with missing `RATING` or `RunTime`
 
-Cleaning Steps
-The following steps were applied to clean the dataset:
+---
 
-Removed newline characters and stripped extra whitespace from text fields (MOVIES, GENRE, ONE-LINE, STARS)
+## 🔧 Tools Used
 
-Extracted the year from the YEAR column using regular expressions
+- [Python 3](https://www.python.org/)
+- [Pandas](https://pandas.pydata.org/)
+- [Jupyter Notebook](https://jupyter.org/)
+- [GitHub](https://github.com/)
 
-Converted the VOTES column to numeric format by removing commas
+---
 
-Dropped the Gross column due to excessive missing values
+## 🚀 How to Run This Project
 
-Removed rows with missing values in key columns such as RATING or RunTime
-
-Technologies Used
-Python 3
-
-Pandas
-
-Jupyter Notebook
-
-How to Use
-Clone or download this repository
-
-Open the Pandas2F.ipynb notebook in Jupyter
-
-Run the cells to see the cleaning process
-
-Use movies_cleaned.csv for analysis or visualization
+1. Clone or download the repository  
+   ```bash
+   git clone https://github.com/Thanusan04/-movie-data-cleaning.git
