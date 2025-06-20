@@ -1,4 +1,4 @@
-# 🎥 Movie Data Cleaning Project
+# 🎥 Movie Data Cleaning Project.
 
 This project demonstrates how to clean a raw movie dataset using **Python**, **Pandas**, and **Jupyter Notebook**.
 
